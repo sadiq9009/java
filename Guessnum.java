@@ -10,13 +10,13 @@ public class Guessnum {
 		
 		int number = 1 + (int)(Math.random()*100);
 		
-		int k = 5;
+		int k = 15;
 		
 		int i,guess;
 		
 		System.out.println("choose the number");
 		
-		for(i = 0; i<=5; i++) {
+		for(i = 0; i<=k; i++) {
 			
 			System.out.println("guess the number");
 			
@@ -26,19 +26,25 @@ public class Guessnum {
 				
 				System.out.println("congratulation :"+"U have guess correct");
 				
-			}else if(number > guess){
-				
-				System.out.println("the number is greater");
-			}else if(number < guess) {
-				System.out.println("the number is lesser");
-			}else {
-				System.out.println("enter the valid number");
 			}
+//			else if(number > guess){
+//				System.out.println("the number is greater");
+//			}else if(number < guess) {
+//				System.out.println("the number is lesser");
+//			}else {
+//				System.out.println("enter the valid number");
+//			}
+			
+			String output = (number > guess) ? ("the number is greater") : ("the number is less");
+			
+			System.out.println(output);
 			
 			if(i==k) {
 				System.out.println("the trail has exhausted");
 				
 				System.out.println("the number was :"+number);
+				
+				
 			}	
 			
 		}

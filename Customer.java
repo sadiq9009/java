@@ -19,7 +19,7 @@ abstract class BankA{
 
  class bankService extends BankA
 {
-	 private double bal = 5000000.0;
+	 private double bal = 50000.0;
      private int pwd;
      private double money;
      
